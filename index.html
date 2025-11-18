@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>MEGA CANVAS - Guia Definitivo (Conteúdo Completo)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Container Mestre (1600px) */
+        .mega-canvas-container {
+            width: 1600px;
+            background-color: #F5FAFC;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        /* Bloco de Conteúdo */
+        .content-block {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            background-color: #F5FAFC;
+            padding-bottom: 80px;
+        }
+
+        /* Separador Visual */
+        .section-separator {
+            width: 100%;
+            height: 80px;
+            background-color: #EABB45;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 800;
+            color: #1D1E25;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Tipografia e Layout */
+        .px-standard { padding-left: 100px; padding-right: 100px; }
+        .pt-standard { padding-top: 80px; }
+        
+        .text-body { font-size: 24px; color: #4a5568; text-align: justify; margin-bottom: 30px; }
+        .text-highlight { font-weight: 700; color: #1D1E25; }
+        
+        .main-title { font-size: 64px; font-weight: 900; color: #1D1E25; line-height: 1.1; margin-bottom: 20px; }
+        .section-title { font-size: 48px; font-weight: 800; color: #1D1E25; border-left: 10px solid #EABB45; padding-left: 30px; margin: 60px 0 40px 0; }
+
+        /* Cores */
+        .bg-marinha { background-color: #0D5D8B; }
+        .bg-exercito { background-color: #166534; }
+        .bg-fab { background-color: #62A7D6; } /* Azul Claro FAB */
+        .text-marinha { color: #0D5D8B; }
+        .text-exercito { color: #166534; }
+        .text-fab { color: #0c6a9e; } /* Tom mais escuro para leitura */
+        
+        .bg-accent-light { background-color: #EABB451A; }
+        .bg-marinha-light { background-color: #0D5D8B0D; }
+        .bg-exercito-light { background-color: #1665340D; }
+        .bg-fab-light { background-color: #62A7D61A; }
+
+        /* Ficha Técnica */
+        .ficha-header { padding: 80px 100px; color: white; position: relative; }
+        .ficha-icon { font-size: 120px; position: absolute; right: 100px; top: 50%; transform: translateY(-50%); opacity: 0.2; color: white; }
+        .ficha-title { font-size: 72px; font-weight: 900; line-height: 1.1; }
+        .ficha-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; padding: 60px 100px; }
+        
+        .level-box { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.04); margin-bottom: 40px; }
+        .level-title { font-size: 32px; font-weight: 800; color: #1D1E25; border-bottom: 3px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 30px; }
+        
+        .info-label { font-size: 20px; font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 5px; letter-spacing: 1px; }
+        .info-value { font-size: 26px; font-weight: 600; color: #1D1E25; margin-bottom: 25px; line-height: 1.3; }
+        .info-list li { font-size: 22px; color: #4a5568; margin-bottom: 12px; padding-left: 15px; border-left: 4px solid #EABB45; }
+
+        /* CTA */
+        .cta-container { background-color: #1D1E25; padding: 120px 100px; text-align: center; color: white; }
+        .cta-btn { display: inline-block; background-color: #EABB45; color: #1D1E25; font-size: 40px; font-weight: 900; padding: 30px 80px; border-radius: 15px; text-transform: uppercase; margin-top: 60px; text-decoration: none; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+
+    </style>
+</head>
+<body>
+
+<div class="mega-canvas-container">
+
+    <!-- 1. INTRODUÇÃO -->
+    <div class="content-block px-standard pt-standard">
+        <!-- Header Simples -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px; border-bottom: 4px solid #1D1E25; padding-bottom: 30px;">
+            <div style="font-size: 48px; font-weight: 900; color: #1D1E25; text-transform: uppercase;">Guia Definitivo</div>
+            <div style="font-size: 36px; font-weight: 700; color: #EABB45;">SUPER TURMA</div>
+        </div>
+
+        <h1 class="main-title">A Farda é Sua Próxima Pele?</h1>
+        
+        <p class="text-body">
+            Você está aqui porque tem um sonho. Um sonho de estabilidade, de propósito, de uma carreira que te dê orgulho. Talvez você olhe para a farda e sinta um chamado, mas logo em seguida vem a confusão:
+            <br><br>
+            <span class="text-highlight" style="font-size: 28px;">"São tantas siglas... ESA, EAM, CFN... qual é para mim?"</span>
+            <br>
+            <span class="text-highlight" style="font-size: 28px;">"Será que eu tenho idade?"</span>
+            <br>
+            <span class="text-highlight" style="font-size: 28px;">"Será que é só para homem?"</span>
+        </p>
+
+        <p class="text-body">
+            Essa confusão é o maior obstáculo para quem começa. Muitos desistem antes mesmo de tentar, acreditando que é "muito complicado" ou "não é para eles". O risco de ficar parado, deixando essa confusão vencer, é perder a janela de oportunidade (especialmente a idade) e passar o resto da vida pensando "e se...".
+        </p>
+
+        <div style="background-color: #EABB451A; padding: 40px; border-left: 10px solid #EABB45; margin: 40px 0;">
+            <p style="font-size: 32px; font-weight: 800; color: #1D1E25; margin-bottom: 20px;">Este guia é o seu plano. A sua bússola.</p>
+            <p class="text-body" style="margin-bottom: 0;">
+                Nós, do Super Turma, entendemos essa frustração. Estamos há anos ajudando jovens a transformar essa confusão em **aprovação**. Preparamos este e-book para ser o mapa claro que você precisa. Vamos pegar na sua mão e te levar, passo a passo, pela jornada de descoberta da carreira militar.
+            </p>
+        </div>
+
+        <p class="text-body" style="font-weight: 500;">
+            Ao final desta leitura, você terá clareza total sobre qual concurso é o ideal para o seu perfil e o que fazer, hoje, para começar a sua jornada rumo ao sucesso.
+        </p>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <span style="font-size: 36px; font-weight: 900; color: #0D5D8B;">Vamos juntos? Seja Super!</span>
+        </div>
+    </div>
+
+    <div class="section-separator">PARTE 1: A DESCOBERTA</div>
+
+    <!-- 2. PARTE 1: CONTEÚDO COMPLETO -->
+    <div class="content-block px-standard pt-standard">
+        
+        <!-- Capítulo 1 -->
+        <h2 class="section-title">Capítulo 1: Por Que Ser Militar?</h2>
+        <p class="text-body">A carreira militar é, sem dúvida, uma das escolhas mais sólidas que um jovem pode fazer no Brasil. Mas por quê? Não é apenas pelo salário. É sobre um conjunto de benefícios que mudam a sua vida e a da sua família:</p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+            <div class="level-box" style="border-top: 6px solid #0D5D8B;">
+                <h3 style="font-size: 28px; font-weight: 800; color: #1D1E25; margin-bottom: 15px;">1. Estabilidade (O Fim da CLT)</h3>
+                <p style="font-size: 22px; color: #4a5568;">Após o período de formação e o estágio probatório, você conquista a tão sonhada estabilidade. Em um país com tanta incerteza econômica, ter essa segurança não tem preço.</p>
+            </div>
+            <div class="level-box" style="border-top: 6px solid #0D5D8B;">
+                <h3 style="font-size: 28px; font-weight: 800; color: #1D1E25; margin-bottom: 15px;">2. Plano de Carreira Definido</h3>
+                <p style="font-size: 22px; color: #4a5568;">Diferente da maioria dos empregos, nas Forças Armadas você sabe exatamente o que precisa fazer para ser promovido. Seu esforço é diretamente recompensado.</p>
+            </div>
+            <div class="level-box" style="border-top: 6px solid #0D5D8B;">
+                <h3 style="font-size: 28px; font-weight: 800; color: #1D1E25; margin-bottom: 15px;">3. Assistência Completa</h3>
+                <p style="font-size: 22px; color: #4a5568;">Você e seus dependentes terão acesso a assistência médica e odontológica de alta qualidade (em hospitais próprios das Forças) durante toda a carreira.</p>
+            </div>
+            <div class="level-box" style="border-top: 6px solid #0D5D8B;">
+                <h3 style="font-size: 28px; font-weight: 800; color: #1D1E25; margin-bottom: 15px;">4. Aposentadoria (Reserva)</h3>
+                <p style="font-size: 22px; color: #4a5568;">As regras de aposentadoria (passagem para a reserva) são, em geral, mais vantajosas que as do regime civil.</p>
+            </div>
+            <div class="level-box" style="grid-column: span 2; border-top: 6px solid #EABB45;">
+                <h3 style="font-size: 28px; font-weight: 800; color: #1D1E25; margin-bottom: 15px;">5. Propósito</h3>
+                <p style="font-size: 22px; color: #4a5568;">Você fará parte de algo maior que você mesmo, servindo ao seu país e defendendo a nação.</p>
+            </div>
+        </div>
+
+        <!-- Capítulo 2 -->
+        <h2 class="section-title">Capítulo 2: Desvendando Mitos Comuns</h2>
+        
+        <div style="margin-bottom: 40px;">
+            <div style="display: flex; align-items: flex-start; gap: 30px; margin-bottom: 30px;">
+                <div style="background: #FF6B6B; color: white; padding: 10px 20px; font-weight: 800; border-radius: 8px; font-size: 24px;">MITO 1</div>
+                <div style="font-size: 32px; font-weight: 700; color: #1D1E25;">"Militar só vai para a guerra."</div>
+            </div>
+            <div style="background: #fff; padding: 30px; border-left: 8px solid #06D6A0; border-radius: 0 10px 10px 0;">
+                <p style="font-size: 24px; color: #4a5568;"><span style="font-weight: 800; color: #06D6A0;">REALIDADE:</span> A principal função das Forças Armadas em tempos de paz é a defesa do território, o controle das fronteiras, o patrulhamento dos mares e ações de ajuda humanitária. Além disso, existem centenas de funções administrativas, de saúde, de engenharia e de manutenção.</p>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <div style="display: flex; align-items: flex-start; gap: 30px; margin-bottom: 30px;">
+                <div style="background: #FF6B6B; color: white; padding: 10px 20px; font-weight: 800; border-radius: 8px; font-size: 24px;">MITO 2</div>
+                <div style="font-size: 32px; font-weight: 700; color: #1D1E25;">"Mulher não pode seguir carreira."</div>
+            </div>
+            <div style="background: #fff; padding: 30px; border-left: 8px solid #06D6A0; border-radius: 0 10px 10px 0;">
+                <p style="font-size: 24px; color: #4a5568;"><span style="font-weight: 800; color: #06D6A0;">REALIDADE:</span> Este é um dos mitos mais ultrapassados. Hoje, as mulheres têm acesso a quase todas as carreiras militares, incluindo cargos de combate e postos de alto comando (Oficiais Generais). Este guia mostra exatamente quais concursos (como ESA, EAM, EsPCEx, AFA) abriram as portas e buscam o talento feminino.</p>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <div style="display: flex; align-items: flex-start; gap: 30px; margin-bottom: 30px;">
+                <div style="background: #FF6B6B; color: white; padding: 10px 20px; font-weight: 800; border-radius: 8px; font-size: 24px;">MITO 3</div>
+                <div style="font-size: 32px; font-weight: 700; color: #1D1E25;">"Precisa de 'QI' (Quem Indica)."</div>
+            </div>
+            <div style="background: #fff; padding: 30px; border-left: 8px solid #06D6A0; border-radius: 0 10px 10px 0;">
+                <p style="font-size: 24px; color: #4a5568;"><span style="font-weight: 800; color: #06D6A0;">REALIDADE:</span> O ingresso nas Forças Armadas de carreira é feito exclusivamente por concurso público. Não importa de onde você vem, quem você conhece ou quanto dinheiro sua família tem. Se você estudar, passar na prova e for aprovado em todas as etapas, a vaga é sua por mérito. É a forma mais democrática de ascensão social.</p>
+            </div>
+        </div>
+
+        <!-- Capítulo 3 -->
+        <h2 class="section-title">Capítulo 3: O Mapa das Forças</h2>
+        <p class="text-body">De forma simples, para que serve cada Força?</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px;">
+            <div style="background: #0D5D8B; color: white; padding: 40px; border-radius: 20px;">
+                <div style="font-size: 60px; margin-bottom: 20px;">⚓</div>
+                <h3 style="font-size: 32px; font-weight: 800; margin-bottom: 15px; text-transform: uppercase;">Marinha</h3>
+                <p style="font-size: 22px; font-weight: 400;">É a Força responsável por guardar os nossos mares, rios navegáveis e defender nossos interesses na "Amazônia Azul" (nossa costa marítima rica em petróleo e recursos). Eles operam navios, submarinos e aeronaves.</p>
+            </div>
+            <div style="background: #166534; color: white; padding: 40px; border-radius: 20px;">
+                <div style="font-size: 60px; margin-bottom: 20px;">⭐</div>
+                <h3 style="font-size: 32px; font-weight: 800; margin-bottom: 15px; text-transform: uppercase;">Exército</h3>
+                <p style="font-size: 22px; font-weight: 400;">É a Força que guarda nossas fronteiras terrestres. Atua na defesa do território, combate a crimes fronteiriços e é presença garantida em ações sociais e de infraestrutura pelo interior do Brasil.</p>
+            </div>
+            <div style="background: #62A7D6; color: #1D1E25; padding: 40px; border-radius: 20px;">
+                <div style="font-size: 60px; margin-bottom: 20px;">✈️</div>
+                <h3 style="font-size: 32px; font-weight: 800; margin-bottom: 15px; text-transform: uppercase;">Aeronáutica</h3>
+                <p style="font-size: 22px; font-weight: 500;">É a Força que controla e defende nosso espaço aéreo. Operam os caças, aviões de transporte, helicópteros e todo o sistema de radares e controle de tráfego aéreo do país.</p>
+            </div>
+        </div>
+
+        <!-- Capítulo 4 -->
+        <h2 class="section-title">Capítulo 4: O Primeiro Filtro (Qual Porta é Para Você?)</h2>
+        <p class="text-body">Antes de olhar as 12 oportunidades deste guia, você precisa passar por 3 filtros simples que definirão seu caminho:</p>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+            <div style="background: white; border: 3px solid #EABB45; border-radius: 20px; padding: 40px; text-align: center;">
+                <div style="font-size: 60px; color: #0D5D8B; margin-bottom: 20px;">🎓</div>
+                <h3 style="font-size: 32px; font-weight: 800; color: #1D1E25; margin-bottom: 10px;">1. Escolaridade</h3>
+                <p style="font-size: 22px; color: #4a5568;">O que você já concluiu? Isso define o Nível de Ingresso.</p>
+                <p style="font-size: 22px; font-weight: 700; color: #1D1E25; margin-top: 10px;">Fundamental | Médio | Técnico</p>
+            </div>
+            <div style="background: white; border: 3px solid #EABB45; border-radius: 20px; padding: 40px; text-align: center;">
+                <div style="font-size: 60px; color: #0D5D8B; margin-bottom: 20px;">📅</div>
+                <h3 style="font-size: 32px; font-weight: 800; color: #1D1E25; margin-bottom: 10px;">2. Idade</h3>
+                <p style="font-size: 22px; color: #4a5568;">O fator mais crítico. Cada concurso tem um limite rígido.</p>
+                <p style="font-size: 22px; font-weight: 700; color: #e53e3e; margin-top: 10px;">(Verifique o Edital!)</p>
+            </div>
+            <div style="background: white; border: 3px solid #EABB45; border-radius: 20px; padding: 40px; text-align: center;">
+                <div style="font-size: 60px; color: #0D5D8B; margin-bottom: 20px;">🚻</div>
+                <h3 style="font-size: 32px; font-weight: 800; color: #1D1E25; margin-bottom: 10px;">3. Gênero</h3>
+                <p style="font-size: 22px; color: #4a5568;">A maioria aceita ambos, mas alguns ainda são exclusivos.</p>
+                <p style="font-size: 22px; font-weight: 700; color: #1D1E25; margin-top: 10px;">Fem | Masc | Ambos</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-separator">PARTE 2: FICHAS TÉCNICAS</div>
+
+    <!-- =======================================================================
+         INÍCIO DAS FICHAS TÉCNICAS (MARINHA)
+    ======================================================================== -->
+
+    <!-- FICHA 1: CFN -->
+    <div class="ficha-header bg-marinha">
+        <span class="ficha-icon">⚓</span>
+        <div style="font-size: 24px; font-weight: 600; color: #94D0F0; margin-bottom: 5px;">MARINHA DO BRASIL</div>
+        <h2 class="ficha-title">Soldado Fuzileiro Naval (CFN)</h2>
+        <p style="font-size: 32px; color: #EABB45; margin-top: 10px;">A porta de entrada para a Tropa de Elite Anfíbia.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <!-- Coluna Esquerda -->
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-marinha">O que é</span>
+                <div class="info-value">O concurso para a tropa de elite. O Fuzileiro é um combatente anfíbio (terra, mar e ar).</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-marinha">Gênero</span><div class="info-value">Masculino</div></div>
+                    <div><span class="info-label text-marinha">Idade</span><div class="info-value">18 a 21 anos</div></div>
+                    <div><span class="info-label text-marinha">Escolaridade</span><div class="info-value">Médio Completo</div></div>
+                    <div><span class="info-label text-marinha">Altura</span><div class="info-value">Min. 1,54m</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-marinha-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-marinha">Patente Inicial</span>
+                <div class="info-value">Soldado Fuzileiro Naval (SD-FN)</div>
+                <span class="info-label text-marinha">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">R$ 2.294,50*</div>
+                <span class="info-label text-marinha">Local de Atuação</span>
+                <div class="info-value">Unidades do CFN em todo o Brasil (RJ, DF, BA, etc.)</div>
+                <span class="info-label text-marinha">Plano de Carreira</span>
+                <div class="info-value">Soldado → Cabo → 3º Sgt → Suboficial</div>
+            </div>
+        </div>
+        <!-- Coluna Direita -->
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-marinha">Prova Teórica</span>
+                <ul class="info-list">
+                    <li>Língua Portuguesa (25 questões)</li>
+                    <li>Matemática (25 questões)</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">TAF (Físico) - Rigoroso!</span>
+                <ul class="info-list">
+                    <li>Natação: 50m em até 2 min</li>
+                    <li>Corrida: 3.200m em até 19 min</li>
+                    <li>Flexão na barra: 3 repetições</li>
+                    <li>Flexão no solo e Abdominal (38 rep/1 min)</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-marinha">Curso de Formação (C-FSD-FN)</span>
+                <ul class="info-list">
+                    <li>Duração: Aprox. 17 semanas (Internato)</li>
+                    <li>Locais: CIAMPA (RJ) ou CIAB (DF)</li>
+                    <li>Rotina: Treinamento militar intenso.</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">Salário Aluno (Ajuda de Custo)</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.303,90*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 2: EAM -->
+    <div class="ficha-header bg-marinha">
+        <span class="ficha-icon">⚓</span>
+        <div style="font-size: 24px; font-weight: 600; color: #94D0F0; margin-bottom: 5px;">MARINHA DO BRASIL</div>
+        <h2 class="ficha-title">Escola de Aprendizes (EAM)</h2>
+        <p style="font-size: 32px; color: #EABB45; margin-top: 10px;">A formação clássica do "homem do mar".</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <!-- Coluna Esquerda -->
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-marinha">O que é</span>
+                <div class="info-value">A principal porta de entrada para ser um Praça (Marinheiro), trabalhando na operação de navios.</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-marinha">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-marinha">Idade</span><div class="info-value">18 a 21 anos</div></div>
+                    <div><span class="info-label text-marinha">Escolaridade</span><div class="info-value">Médio Completo</div></div>
+                    <div><span class="info-label text-marinha">Estado Civil</span><div class="info-value">Solteiro(a)</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-marinha-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-marinha">Patente Inicial</span>
+                <div class="info-value">Marinheiro (MN)</div>
+                <span class="info-label text-marinha">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">R$ 2.294,50*</div>
+                <span class="info-label text-marinha">Local de Atuação</span>
+                <div class="info-value">Navios, submarinos e organizações militares em todo o território nacional.</div>
+                <span class="info-label text-marinha">Plano de Carreira</span>
+                <div class="info-value">Marinheiro → Cabo → 3º Sgt → Suboficial</div>
+            </div>
+        </div>
+        <!-- Coluna Direita -->
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-marinha">Prova Teórica (50 Questões)</span>
+                <ul class="info-list">
+                    <li>Matemática (15), Português (15)</li>
+                    <li>Ciências - Fís/Quí (15), Inglês (5)</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Natação: 50m (1m30s H / 2m20s M)</li>
+                    <li>Corrida: 2.400m (16 min H / 17 min M)</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-marinha">Curso de Formação (CPAEAM)</span>
+                <ul class="info-list">
+                    <li>Duração: Aprox. 48 semanas (1 ano letivo)</li>
+                    <li>Locais: EAMs (CE, PE, ES, SC)</li>
+                    <li>Especialização: Eletroeletrônica, Apoio ou Mecânica.</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">Salário Aluno (Grumete)</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.303,90*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 3: COLÉGIO NAVAL (CN) -->
+    <div class="ficha-header bg-marinha">
+        <span class="ficha-icon">⚓</span>
+        <div style="font-size: 24px; font-weight: 600; color: #94D0F0; margin-bottom: 5px;">MARINHA DO BRASIL</div>
+        <h2 class="ficha-title">Colégio Naval (CN)</h2>
+        <p style="font-size: 32px; color: #EABB45; margin-top: 10px;">O Ensino Médio de elite para futuros Oficiais.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-marinha">O que é</span>
+                <div class="info-value">Instituição de Ensino Médio que prepara jovens para a Escola Naval (a faculdade dos Oficiais).</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-marinha">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-marinha">Idade</span><div class="info-value">15 a 17 anos</div></div>
+                    <div><span class="info-label text-marinha">Escolaridade</span><div class="info-value">Fundamental</div></div>
+                    <div><span class="info-label text-marinha">Local</span><div class="info-value">Angra dos Reis</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-marinha-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-marinha">Próximo Passo</span>
+                <div class="info-value">Ingresso direto na Escola Naval (EN).</div>
+                <span class="info-label text-marinha">Carreira Final</span>
+                <div class="info-value">Oficial da Marinha (até Almirante).</div>
+                <span class="info-label text-marinha">Jornada</span>
+                <div class="info-value">CN (3 anos) → EN (5 anos) → 2º Tenente.</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-marinha">Prova Teórica (2 Dias)</span>
+                <ul class="info-list">
+                    <li>Dia 1: Matemática (20) e Inglês (20).</li>
+                    <li>Dia 2: Port (20), Est. Sociais (12), Ciências (18), Red.</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Natação: 25m (50s H / 1 min M)</li>
+                    <li>Corrida: 2.400m (16 min H / 17 min M)</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-marinha">Curso de Preparação (CPACN)</span>
+                <ul class="info-list">
+                    <li>Duração: 3 anos letivos (Internato)</li>
+                    <li>Local: Angra dos Reis (RJ)</li>
+                    <li>Rotina: Ensino Médio + Formação Militar-Naval.</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">Salário Aluno (Bolsa)</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.398,30*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 4: ESCOLA NAVAL (EN) -->
+    <div class="ficha-header bg-marinha">
+        <span class="ficha-icon">⚓</span>
+        <div style="font-size: 24px; font-weight: 600; color: #94D0F0; margin-bottom: 5px;">MARINHA DO BRASIL</div>
+        <h2 class="ficha-title">Escola Naval (EN)</h2>
+        <p style="font-size: 32px; color: #EABB45; margin-top: 10px;">A universidade que forma os Oficiais de Carreira.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-marinha">O que é</span>
+                <div class="info-value">Ensino Superior. Forma Oficiais da Armada (Navios), Fuzileiros Navais e Intendentes.</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-marinha">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-marinha">Idade</span><div class="info-value">18 a 22 anos</div></div>
+                    <div><span class="info-label text-marinha">Escolaridade</span><div class="info-value">Médio Completo</div></div>
+                    <div><span class="info-label text-marinha">Estado Civil</span><div class="info-value">Solteiro(a)</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-marinha-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-marinha">Patente Inicial</span>
+                <div class="info-value">Segundo-Tenente (Oficial)</div>
+                <span class="info-label text-marinha">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">R$ 8.179,00*</div>
+                <span class="info-label text-marinha">Plano de Carreira</span>
+                <div class="info-value">2º Tenente → Capitão → Almirante de Esquadra (Topo).</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-marinha">Prova Teórica (Alto Nível)</span>
+                <ul class="info-list">
+                    <li>Dia 1: Matemática (22) e Inglês (18).</li>
+                    <li>Dia 2: Física (22), Português (18) e Redação.</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Natação: 50m (1m30s H / 2m20s M)</li>
+                    <li>Corrida: 2.400m (14m30s H / 16 min M)</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-marinha">Graduação (Ciências Navais)</span>
+                <ul class="info-list">
+                    <li>Duração: 5 anos letivos (Internato)</li>
+                    <li>Local: Escola Naval, Rio de Janeiro (RJ)</li>
+                    <li>Rotina: Estudo superior + Formação de líder.</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">Salário Aluno (Aspirante)</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.574,12*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 5: CAP -->
+    <div class="ficha-header bg-marinha">
+        <span class="ficha-icon">⚓</span>
+        <div style="font-size: 24px; font-weight: 600; color: #94D0F0; margin-bottom: 5px;">MARINHA DO BRASIL</div>
+        <h2 class="ficha-title">Corpo Auxiliar (CAP)</h2>
+        <p style="font-size: 32px; color: #EABB45; margin-top: 10px;">Para quem já tem Curso Técnico.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-marinha">O que é</span>
+                <div class="info-value">Concurso para técnicos exercerem sua profissão na Marinha como Cabos (Enfermagem, TI, Mecânica, etc).</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-marinha">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-marinha">Idade</span><div class="info-value">18 a 24 anos</div></div>
+                    <div style="grid-column: span 2;"><span class="info-label text-marinha">Escolaridade</span><div class="info-value">Médio + Técnico na área</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-marinha-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-marinha">Patente Inicial</span>
+                <div class="info-value">Cabo (CB)</div>
+                <span class="info-label text-marinha">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">R$ 3.800,00*</div>
+                <span class="info-label text-marinha">Atuação</span>
+                <div class="info-value">Organizações Militares em terra (Hospitais, Bases).</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-marinha">Prova Teórica</span>
+                <ul class="info-list">
+                    <li>Conhecimentos Profissionais (da área) (50)</li>
+                    <li>Redação</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Natação: 25m (50s H / 1 min M)</li>
+                    <li>Corrida: 2.400m (16 min H / 17 min M)</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-marinha">Curso de Formação (CFC)</span>
+                <ul class="info-list">
+                    <li>Duração: Aprox. 17 semanas (Internato)</li>
+                    <li>Local: CIAA, Rio de Janeiro (RJ)</li>
+                    <li>Foco: Adaptação Militar (técnica é pré-requisito).</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">Salário Aluno (Grumete)</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.398,30*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 6: EFOMM -->
+    <div class="ficha-header bg-marinha">
+        <span class="ficha-icon">⚓</span>
+        <div style="font-size: 24px; font-weight: 600; color: #94D0F0; margin-bottom: 5px;">MARINHA DO BRASIL (MERCANTE)</div>
+        <h2 class="ficha-title">EFOMM</h2>
+        <p style="font-size: 32px; color: #EABB45; margin-top: 10px;">Oficial da Marinha Mercante (Navios Civis).</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-marinha">O que é</span>
+                <div class="info-value">Forma Oficiais para navios mercantes (cargueiros, petróleo). Não é carreira militar direta, mas reserva da Marinha.</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-marinha">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-marinha">Idade</span><div class="info-value">17 a 23 anos</div></div>
+                    <div><span class="info-label text-marinha">Escolaridade</span><div class="info-value">Médio Completo</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-marinha-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-marinha">Patente Inicial</span>
+                <div class="info-value">2º Oficial de Náutica ou Máquinas (Civil) / 2º Tenente R2 (Militar)</div>
+                <span class="info-label text-marinha">Salário Inicial</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">Alto (Em Dólar)</div>
+                <span class="info-label text-marinha">Atuação</span>
+                <div class="info-value">Empresas privadas de navegação (nacional/internacional).</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-marinha">Prova Teórica (Nível Vestibular)</span>
+                <ul class="info-list">
+                    <li>Português, Redação, Inglês</li>
+                    <li>Matemática, Física</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Corrida: 2.300m (H) / 1.900m (M) em 12 min</li>
+                    <li>Natação: 50m em 2 min (H) / 2m20s (M)</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-marinha">Formação (Graduação)</span>
+                <ul class="info-list">
+                    <li>Duração: 3 anos (Internato)</li>
+                    <li>Locais: CIAGA (RJ) ou CIABA (PA)</li>
+                    <li>Rotina: Faculdade + Instrução Militar.</li>
+                </ul>
+                <span class="info-label text-marinha" style="margin-top: 30px;">Salário Aluno (Bolsa)</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.574,12*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =======================================================================
+         EXÉRCITO BRASILEIRO
+    ======================================================================== -->
+
+    <!-- FICHA 7: ESA -->
+    <div class="ficha-header bg-exercito">
+        <span class="ficha-icon">⭐</span>
+        <div style="font-size: 24px; font-weight: 600; color: #EABB45; margin-bottom: 5px;">EXÉRCITO BRASILEIRO</div>
+        <h2 class="ficha-title">Sargento das Armas (ESA)</h2>
+        <p style="font-size: 32px; color: #EABB45; margin-top: 10px;">O coração do Exército (Combatentes, Saúde e Música).</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-exercito">O que é</span>
+                <div class="info-value">Formação de Sargentos de carreira. O elo vital entre o comando e a tropa.</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-exercito">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-exercito">Idade</span><div class="info-value">17-24 (Geral)</div></div>
+                    <div><span class="info-label text-exercito">Escolaridade</span><div class="info-value">Médio Completo</div></div>
+                    <div><span class="info-label text-exercito">Altura</span><div class="info-value">1,60m H / 1,55m M</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-exercito-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-exercito">Patente Inicial</span>
+                <div class="info-value">Terceiro-Sargento (3ºSG)</div>
+                <span class="info-label text-exercito">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #166534;">R$ 5.049,00*</div>
+                <span class="info-label text-exercito">Atuação</span>
+                <div class="info-value">Quartéis em todo o território nacional.</div>
+                <span class="info-label text-exercito">Plano</span>
+                <div class="info-value">3º Sgt → Subtenente → Oficial QAO.</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-exercito">Prova Teórica</span>
+                <ul class="info-list">
+                    <li>Matemática (14), Português (14)</li>
+                    <li>Hist/Geo (12), Inglês (10), Redação</li>
+                </ul>
+                <span class="info-label text-exercito" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Corrida: 2.450m H / 2.100m M (12 min)</li>
+                    <li>Barra (3 H / 1 M), Flexão e Abdominal.</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-exercito">Formação (CFGS)</span>
+                <ul class="info-list">
+                    <li>Duração: 2 anos (Internato)</li>
+                    <li>Local: 1º Ano (13 Unidades) / 2º Ano (Três Corações - MG)</li>
+                    <li>Foco: Militarismo + Especialização na Arma.</li>
+                </ul>
+                <span class="info-label text-exercito" style="margin-top: 30px;">Salário Aluno</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.309,00*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 8: EsPCEx -->
+    <div class="ficha-header bg-exercito">
+        <span class="ficha-icon">⭐</span>
+        <div style="font-size: 24px; font-weight: 600; color: #EABB45; margin-bottom: 5px;">EXÉRCITO BRASILEIRO</div>
+        <h2 class="ficha-title">Cadetes do Exército (EsPCEx)</h2>
+        <p style="font-size: 32px; color: #EABB45; margin-top: 10px;">O primeiro passo para ser Oficial Combatente.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-exercito">O que é</span>
+                <div class="info-value">Concurso para formar os Oficiais de Carreira (Líderes) do Exército. A jornada começa na EsPCEx e segue para a AMAN.</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-exercito">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-exercito">Idade</span><div class="info-value">17 a 22 anos</div></div>
+                    <div><span class="info-label text-exercito">Escolaridade</span><div class="info-value">Médio Completo</div></div>
+                    <div><span class="info-label text-exercito">Estado Civil</span><div class="info-value">Solteiro(a)</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-exercito-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-exercito">Patente Inicial</span>
+                <div class="info-value">Aspirante, depois 2º Tenente</div>
+                <span class="info-label text-exercito">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #166534;">R$ 8.179,00*</div>
+                <span class="info-label text-exercito">Plano de Carreira</span>
+                <div class="info-value">Tenente → Capitão → General de Exército.</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-exercito">Prova Teórica (2 Dias)</span>
+                <ul class="info-list">
+                    <li>D1: Port (20), Fís (12), Quí (12), Red.</li>
+                    <li>D2: Mat (20), Geo (12), Hist (12), Ing (12).</li>
+                </ul>
+                <span class="info-label text-exercito" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Corrida: 2.450m H / 2.100m M (12 min)</li>
+                    <li>Barra, Flexão e Abdominal.</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-exercito">Formação (5 Anos)</span>
+                <ul class="info-list">
+                    <li>1º Ano: EsPCEx (Campinas - SP)</li>
+                    <li>2º ao 5º Ano: AMAN (Resende - RJ)</li>
+                    <li>Diploma: Ciências Militares.</li>
+                </ul>
+                <span class="info-label text-exercito" style="margin-top: 30px;">Salário Aluno (Cadete)</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.426,00*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =======================================================================
+         FORÇA AÉREA BRASILEIRA
+    ======================================================================== -->
+
+    <!-- FICHA 9: EEAR -->
+    <div class="ficha-header bg-fab">
+        <span class="ficha-icon">✈️</span>
+        <div style="font-size: 24px; font-weight: 600; color: #1D1E25; opacity: 0.7; margin-bottom: 5px;">FORÇA AÉREA BRASILEIRA</div>
+        <h2 class="ficha-title" style="color: #1D1E25;">Especialistas (EEAR)</h2>
+        <p style="font-size: 32px; color: #1D1E25; margin-top: 10px;">Formação de Sargentos Especialistas Técnicos.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-fab">O que é</span>
+                <div class="info-value">Maior complexo de ensino técnico-militar. Forma especialistas em Controle de Voo, Mecânica, Eletrônica, etc.</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-fab">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-fab">Idade</span><div class="info-value">17 a 24 anos</div></div>
+                    <div><span class="info-label text-fab">Escolaridade</span><div class="info-value">Médio Completo</div></div>
+                    <div><span class="info-label text-fab">Frequência</span><div class="info-value">2x por ano</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-fab-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-fab">Patente Inicial</span>
+                <div class="info-value">Terceiro-Sargento (3ºSG)</div>
+                <span class="info-label text-fab">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">R$ 5.049,00*</div>
+                <span class="info-label text-fab">Atuação</span>
+                <div class="info-value">Bases Aéreas em todo o Brasil.</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-fab">Prova Teórica</span>
+                <ul class="info-list">
+                    <li>Língua Portuguesa, Língua Inglesa</li>
+                    <li>Matemática, Física</li>
+                    <li>(Inglês e Física são diferenciais!)</li>
+                </ul>
+                <span class="info-label text-fab" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Corrida (2.250m H / 1.850m M), Flexão, Abdominal e Salto Horizontal.</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-fab">Formação (CFS)</span>
+                <ul class="info-list">
+                    <li>Duração: 2 anos (Internato)</li>
+                    <li>Local: EEAR, Guaratinguetá (SP)</li>
+                    <li>Rotina: Militarismo + Especialização Técnica.</li>
+                </ul>
+                <span class="info-label text-fab" style="margin-top: 30px;">Salário Aluno</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.309,00*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 10: AFA -->
+    <div class="ficha-header bg-fab">
+        <span class="ficha-icon">✈️</span>
+        <div style="font-size: 24px; font-weight: 600; color: #1D1E25; opacity: 0.7; margin-bottom: 5px;">FORÇA AÉREA BRASILEIRA</div>
+        <h2 class="ficha-title" style="color: #1D1E25;">Academia da Força Aérea</h2>
+        <p style="font-size: 32px; color: #1D1E25; margin-top: 10px;">Formação de Oficiais Aviadores, Intendentes e Infantaria.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-fab">O que é</span>
+                <div class="info-value">Ensino Superior da FAB. Forma os pilotos (Aviadores), administradores (Intendentes) e Infantaria.</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-fab">Gênero</span><div class="info-value">Ambos (Inclui Inf.)</div></div>
+                    <div><span class="info-label text-fab">Idade</span><div class="info-value">17 a 22 anos</div></div>
+                    <div><span class="info-label text-fab">Escolaridade</span><div class="info-value">Médio Completo</div></div>
+                    <div><span class="info-label text-fab">Estado Civil</span><div class="info-value">Solteiro(a)</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-fab-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-fab">Patente Inicial</span>
+                <div class="info-value">Segundo-Tenente</div>
+                <span class="info-label text-fab">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">R$ 8.179,00*</div>
+                <span class="info-label text-fab">Plano</span>
+                <div class="info-value">Tenente → ... → Tenente-Brigadeiro do Ar.</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-fab">Prova Teórica (Altíssimo Nível)</span>
+                <ul class="info-list">
+                    <li>Português (16), Inglês (16)</li>
+                    <li>Matemática (16), Física (16), Redação</li>
+                </ul>
+                <span class="info-label text-fab" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Corrida, Flexão, Abdominal e Salto Horizontal.</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-fab">Formação (CFO)</span>
+                <ul class="info-list">
+                    <li>Duração: 4 anos (Internato)</li>
+                    <li>Local: AFA, Pirassununga (SP)</li>
+                    <li>Diploma: Bacharel em Administração.</li>
+                </ul>
+                <span class="info-label text-fab" style="margin-top: 30px;">Salário Aluno (Cadete)</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.457,00*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 11: EAGS -->
+    <div class="ficha-header bg-fab">
+        <span class="ficha-icon">✈️</span>
+        <div style="font-size: 24px; font-weight: 600; color: #1D1E25; opacity: 0.7; margin-bottom: 5px;">FORÇA AÉREA BRASILEIRA</div>
+        <h2 class="ficha-title" style="color: #1D1E25;">Sargento Técnico (EAGS)</h2>
+        <p style="font-size: 32px; color: #1D1E25; margin-top: 10px;">Para quem já tem Curso Técnico.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-fab">O que é</span>
+                <div class="info-value">Estágio de Adaptação à Graduação de Sargento. Ingresso como Sargento usando seu diploma técnico.</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-fab">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-fab">Idade</span><div class="info-value">17 a 24 anos</div></div>
+                    <div style="grid-column: span 2;"><span class="info-label text-fab">Escolaridade</span><div class="info-value">Médio + Técnico Completo na área</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-fab-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-fab">Patente Inicial</span>
+                <div class="info-value">Terceiro-Sargento (3ºSG)</div>
+                <span class="info-label text-fab">Salário Inicial (Est.)</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">R$ 5.049,00*</div>
+                <span class="info-label text-fab">Atuação</span>
+                <div class="info-value">Bases Aéreas em todo o país.</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-fab">Prova Teórica</span>
+                <ul class="info-list">
+                    <li>Língua Portuguesa</li>
+                    <li>Conhecimentos Especializados (Técnicos)</li>
+                </ul>
+                <span class="info-label text-fab" style="margin-top: 30px;">TAF e Prática</span>
+                <ul class="info-list">
+                    <li>Físico: Corrida, Flexão, Abdominal, Salto.</li>
+                    <li>PPE: Prova Prática da Especialidade.</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-fab">Formação (EAGS)</span>
+                <ul class="info-list">
+                    <li>Duração: Aprox. 1 ano (Internato)</li>
+                    <li>Local: EEAR, Guaratinguetá (SP)</li>
+                    <li>Foco: Adaptação Militar.</li>
+                </ul>
+                <span class="info-label text-fab" style="margin-top: 30px;">Salário Aluno</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.309,00*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FICHA 12: EPCAR -->
+    <div class="ficha-header bg-fab">
+        <span class="ficha-icon">✈️</span>
+        <div style="font-size: 24px; font-weight: 600; color: #1D1E25; opacity: 0.7; margin-bottom: 5px;">FORÇA AÉREA BRASILEIRA</div>
+        <h2 class="ficha-title" style="color: #1D1E25;">Cadetes do Ar (EPCAR)</h2>
+        <p style="font-size: 32px; color: #1D1E25; margin-top: 10px;">Ensino Médio de elite para futuros Aviadores.</p>
+    </div>
+    <div class="content-block ficha-grid">
+        <div>
+            <div class="level-box bg-accent-light">
+                <div class="level-title">Nível 1: A Descoberta</div>
+                <span class="info-label text-fab">O que é</span>
+                <div class="info-value">Escola Preparatória. O Ensino Médio da FAB focado em preparar jovens para a AFA (Oficialato).</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div><span class="info-label text-fab">Gênero</span><div class="info-value">Ambos</div></div>
+                    <div><span class="info-label text-fab">Idade</span><div class="info-value">14 a 18 anos</div></div>
+                    <div><span class="info-label text-fab">Escolaridade</span><div class="info-value">Fundamental</div></div>
+                    <div><span class="info-label text-fab">Próximo Passo</span><div class="info-value">AFA (Oficial)</div></div>
+                </div>
+            </div>
+            <div class="level-box bg-fab-light">
+                <div class="level-title">Nível 4: A Carreira</div>
+                <span class="info-label text-fab">Patente Inicial (Pós-AFA)</span>
+                <div class="info-value">Segundo-Tenente</div>
+                <span class="info-label text-fab">Salário Inicial (Pós-AFA)</span>
+                <div class="info-value" style="font-size: 40px; color: #0D5D8B;">R$ 8.179,00*</div>
+                <span class="info-label text-fab">Jornada</span>
+                <div class="info-value">EPCAR (3 Anos) → AFA (4 Anos).</div>
+            </div>
+        </div>
+        <div>
+            <div class="level-box">
+                <div class="level-title">Nível 2: A Exploração</div>
+                <span class="info-label text-fab">Prova Teórica</span>
+                <ul class="info-list">
+                    <li>Língua Portuguesa e Redação</li>
+                    <li>Matemática e Inglês</li>
+                </ul>
+                <span class="info-label text-fab" style="margin-top: 30px;">TAF (Físico)</span>
+                <ul class="info-list">
+                    <li>Corrida, Flexão, Abdominal e Salto Horizontal.</li>
+                </ul>
+            </div>
+            <div class="level-box">
+                <div class="level-title">Nível 3: Pós-Aprovação</div>
+                <span class="info-label text-fab">Formação (CPCAR)</span>
+                <ul class="info-list">
+                    <li>Duração: 3 anos (Internato)</li>
+                    <li>Local: EPCAR, Barbacena (MG)</li>
+                    <li>Rotina: Ensino Médio + Formação Militar.</li>
+                </ul>
+                <span class="info-label text-fab" style="margin-top: 30px;">Salário Aluno</span>
+                <div class="info-value" style="color: #EABB45; font-size: 36px;">R$ 1.309,00*</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. PARTE 3: O PRÓXIMO PASSO (CTA) -->
+    <div class="section-separator">PARTE 3: O PRÓXIMO PASSO</div>
+    
+    <div class="content-block px-standard pt-standard">
+        <h2 class="section-title">Capítulo 5: Você Encontrou Seu Caminho?</h2>
+        <p class="text-body">
+            Ao chegar até aqui, você fez o que 90% dos interessados não fazem: venceu a confusão. Você não está mais no escuro. Agora você tem um mapa. Você sabe a diferença entre um Sargento da ESA e um Sargento da EEAR. Sabe a diferença de idade limite da EsPCEx e da AFA. Sabe que o TAF do Fuzileiro Naval é um dos mais puxados e que o Colégio Naval agora aceita mulheres. Você (nosso <span class="text-highlight">Herói</span>) agora tem clareza. Mas o mapa não te leva ao destino. Ele apenas mostra o caminho.
+        </p>
+
+        <h2 class="section-title">Capítulo 6: O Risco de Ficar Parado</h2>
+        <p class="text-body">
+            O seu maior inimigo na carreira militar não é a prova de Física ou o TAF. <span class="text-highlight">É o relógio.</span>
+            <br><br>
+            Cada concurso que você viu tem um limite de idade rigoroso. "Ter no máximo 22 anos no ano da matrícula" é uma regra que não se curva ao "ano que vem eu começo". O "ano que vem" pode ser o ano em que você não pode mais tentar. Deixar para depois, estudar "quando der", ou tentar sozinho sem método, é o caminho mais rápido para a frustração. É o risco de olhar para trás daqui a dois ou três anos e perceber que a sua janela de oportunidade se fechou para sempre.
+        </p>
+
+        <h2 class="section-title">Capítulo 7: O Sucesso Começa Agora</h2>
+        <p class="text-body">
+            O sucesso, para nós, é ver você fardado. É receber sua foto no dia da formatura, sabendo que fizemos parte da sua mudança de vida. Imagine-se daqui a alguns anos: com estabilidade financeira, dando orgulho para sua família, servindo ao seu país e com um plano de carreira inteiro pela frente. Esse futuro é 100% possível, mas ele exige uma decisão hoje.
+        </p>
+    </div>
+
+    <!-- CTA FINAL -->
+    <div class="cta-container">
+        <h2 style="font-size: 56px; font-weight: 900; margin-bottom: 30px; line-height: 1.1;">A Janela de Oportunidade Não Espera!</h2>
+        <p style="font-size: 26px; max-width: 900px; margin: 0 auto; color: #94D0F0;">
+            Você já tem o mapa. O Super Turma é o seu Guia. Nossos professores são especialistas em converter o conhecimento deste guia em <span style="color: white; font-weight: 700;">aprovação real</span>.
+        </p>
+        <a href="https://api.whatsapp.com/send/?phone=%2B5521982192246&text=Ol%C3%A1%2C+vim+do+ebook+de+carreiras+militares%C3%A1%2Ctenho+uma+pergunta" class="cta-btn">FALE COM O SUPER TURMA AGORA!</a>
+        <div style="margin-top: 100px; font-size: 48px; font-weight: 900; color: #EABB45; letter-spacing: 3px;">NÃO SEJA BOM, SEJA SUPER!</div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <div style="height: 100px; background: white; display: flex; align-items: center; justify-content: center; border-top: 4px solid #EABB45;">
+        <p style="font-size: 20px; color: #666; font-weight: 600;">Super Turma Curso Preparatório | 2025</p>
+    </div>
+
+</div>
+
+</body>
+</html>
